@@ -55,26 +55,6 @@
 	<script type="text/javascript" src="js/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js"></script>
 	<script type="text/javascript" src="js/custom.js"></script>	
-	<script>
-	
-		$(document).ready(function(){
-    		$("button").click(function(){
-        	$("div1").toggle(1000);
-        	$("button").text("See Less");
-        	 });
-		  });	
-		  //http://codepedia.info/jquery-change-button-text-value-dynamically/
-		$("#myBtn").on('click',function(){
-			    var self=$(this);
-			    if(self.val()=="Show")     {
-			   self.val("Hide");  
-			    }
-			    else {
-			   self.val("Show");
-			    }
-			}); 
-
-	</script>
 	<!-- Style 
 	<style>
 button.accordion {
@@ -331,8 +311,7 @@ div.panel.show {
 						<p>Did you know that the majority of musculoskeletal problems can be treated without surgery? Non surgical treatment can range from Chiropractic care to exercise. For example, many arthritic joints respond to Chiropractic Care, strengthening and dietary changes.</p>
 						<p>You should be empowered with knowledge so you can make an informed decision about your health needs.  Dr. Shaneyfelt incorporates this into each of your visit. So, don’t be surprised if you get quizzed by the Doctor. This is all designed to empower you with knowledge.  With his many years of teaching seminars on health related issues he has learned to break down complex topics to simple understandable words and examples. </p>
 						</div1>
-						<input id="myBtn" type="button" value="Show" />
-						<button>Read More</button>
+						<input class="btn btn-lite" id="hideTxtBtn" type="button" value="Read More" />
 						<!--  Need to find code related to button below and cleanup
 						<input type ="button" id="show" value="Read More">
 						<input type ="button" id="hide" value="Less">
