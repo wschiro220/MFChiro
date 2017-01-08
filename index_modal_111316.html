@@ -51,6 +51,22 @@
 	<script type="text/javascript" src="js/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js"></script>
 	<script type="text/javascript" src="js/custom.js"></script>	
+
+	<script>
+		
+		var frameSrc = "/login";
+
+$('#openBtn').click(function(){
+    $('#myModal').on('show', function () {
+
+        $('iframe').attr("src",frameSrc);
+      
+	});
+    $('#myModal').modal({show:true})
+});
+
+	</script>
+
 	</head>
 	<body>
 	<!-- Header Starts -->
@@ -92,9 +108,9 @@
 					<div class="navbar-collapse collapse">
 						<ul class="nav navbar-nav navbar-right">
 							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="about.html">About</a></li>							
-							<li><a href="https://www.zhealthehr.com/nonsecure/home?facilityId=2023" target="_blank">Appointment</a></li>
+							<li><a href="about.html">About</a></li>
 							<!-- Remove
+							<li><a href="appointment.html">Appointment</a></li>
 							<li><a href="services.html">Services</a></li>
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -126,6 +142,49 @@
 		<!-- Navbar Ends -->
 		</header>
 	<!-- Header Ends -->
+
+	<iframe src="http://www.yahoo.com" width = "1560" height = "1400" scrolling = "yes" >
+  <p>Your browser does not support iframes.</p>
+</iframe>
+
+	<!-- Slider Section Starts -->
+		<section class="slider clearfix">
+			<div id="camera_wrap_1" class="camera_wrap">
+			<!-- Slide #1 Starts -->
+				<div data-src="images/slider/DrShaney.jpg">
+					<div class="camera_caption fadeFromLeft hidden-xs">
+						<h2>Uniquely Qualified</h2>
+						<h2>Over 20 Years of Medical Experience Before Becoming a Doctor of Chiropractic</h2>
+					</div>
+				</div>
+			<!-- Slide #1 Ends -->
+			<!-- Slide #2 Starts -->
+				<div data-src="images/slider/testimonials-slider2.jpg">
+					<div class="camera_caption fadeFromLeft hidden-xs">
+						<h2>Testimonials</h2>
+						<h2>What Our Patients Say About Us</h2>
+					</div>
+				</div>
+			<!-- Slide #2 Ends -->
+			<!-- Slide #3 Starts -->
+				<div data-src="images/slider/jars.jpg">
+					<div class="camera_caption fadeFromLeft hidden-xs">
+						<h2>Making the World Healthier</h2>
+						<h2>One Patient at a Time</h2>
+					</div>
+				</div>
+			<!-- Slide #3 Ends -->
+			<!-- Slide #4 Starts -->
+				<div data-src="images/slider/table.jpg">
+					<div class="camera_caption fadeFromRight hidden-xs">
+						<h2>Chiropractic Works</h2>
+						<h2>Get the Help you Need Now!</h2>
+					</div>
+				</div>
+			<!-- Slide #4 Ends -->
+			</div>
+		</section>
+	<!-- Slider Section Ends -->
 	<!-- Notification Section Starts -->
 		<section class="notification-area">
 		<!-- Nested Container Starts -->
@@ -176,12 +235,57 @@
 				<!-- Block #1 Ends -->
 				<!-- Block #2 Starts -->
 					<div class="col-sm-4 col-xs-12 block lite">
-						<a href="https://www.zhealthehr.com/nonsecure/home?facilityId=2023" target="_blank"><h2><i class="fa fa-clock-o"></i></h2>
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+						  Launch demo modal
+						</button>
+
+						<!-- Modal -->
+						<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          <span aria-hidden="true">&times;</span>
+						        </button>
+						        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+						      </div>
+						      <div class="modal-body">
+						         <iframe src="https://www.zhealthehr.com" style="zoom:0.60" width="99.6%" height="250" frameborder="0"></iframe>
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						        <button type="button" class="btn btn-primary">Save changes</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+
+<!-- Modal Test 2 -->
+<a href="#" class="btn" id="openBtn">Open modal test 2</a>
+
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog">
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal">×</button>
+			<h3>Dialog</h3>
+	</div>
+	<div class="modal-body">
+      <iframe src="https://www.zhealthehr.com/nonsecure/home?facilityId=2023" style="zoom:0.60" width="99.6%" height="250" frameborder="0"></iframe>
+	</div>
+	<div class="modal-footer">
+		<button class="btn" data-dismiss="modal">OK</button>
+	</div>
+</div>
+
+<!-- End -->
+
+
+						<a href="https://www.zhealthehr.com/nonsecure/home?facilityId=2023"><h2><i class="fa fa-clock-o"></i></h2>
 						<h3>Office Hours</h3>
 						<p>
 							We have flexible hours to meet your needs.</a>
 						</p>
-						<a href="https://www.zhealthehr.com/nonsecure/home?facilityId=2023" target="_blank" class="btn btn-secondary">Make an Appointment</a>
+						<a href="https://www.zhealthehr.com/nonsecure/home?facilityId=2023" class="btn btn-lite">Make an Appointment</a>
 						<ul class="list-unstyled">
 							<li class="clearfix">
 								<span class="pull-left">Tuesday, Thursday</span>
